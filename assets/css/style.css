@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,500&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/*======= Home =======*/
+section.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/bg-color.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    width: 100%;
+    height: 20vh;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+nav, 
+.logo{
+    width: 250px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo{
+    width: 25%;
+}
+
+.logo img {
+    width: 100%;
+    display: block;
+}
+
+nav {
+    width: 75%;
+}
+
+nav ul{
+    width: 70%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li{
+    font-size: 18px;
+    text-transform: uppercase;
+    display: block;
+    width: 25%;
+    transition: all .4s;
+}
+
+nav li:hover {
+    font-size: 22px;
+}
+
+nav a{
+    color: #000;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    color: #743d2f;
+    font-weight: bold;
+}
+
+.promotion{
+    width: 100%;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.promotion h1{
+    font-size: 60px;
+    color: #000;
+    font-family: 'Dosis', sans-serif;
+}
+
+.promotion p {
+    color: #000;
+    font-size: 20px;
+    margin: 40px 0px;
+    text-align: justify;
+    font-family: 'Cormorant', serif;
+}
+
+.promotion a{
+    color: #000;
+    font-size: 16px;
+    border: 2px solid #000;
+    text-transform: uppercase;
+    padding: 8px 24px;
+    text-decoration: none;
+    align-items: center;
+    transition: all .4s;
+}
+
+.promotion a:hover{
+    background-color: #743d2f;
+    color: #fff;
+}
+
+.promotion .text,
+.promotion .image{
+    align-self: center;
+}
+
+.promotion .image{
+    height: 80vh;
+}
+
+/*======= Shop =======*/
+section.menu{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(26, 23, 23);
+    padding: 20px 0px;
+}
+
+section.menu h2{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+section.menu p{
+    color: #fff;
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.products h3{
+    font-size: 20px;
+    color: #fff;
+}
+
+section.menu .products{
+    width: 100%;
+    height: 60vh;
+    margin: 40px 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    transition: all .4s;
+}
+
+section.menu .product{
+    position: relative;
+    overflow: hidden;
+}
+
+.one, 
+.two, 
+.three{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+}
+
+.one{
+    background-image: url(../images/img1.jpg);
+}
+
+.two{
+    background-image: url(../images/img2.jpg);
+    background-position:center;
+}
+
+.three{
+    background-image: url(../images/img3.jpg);
+    background-position:center;
+}
+
+.products .details{
+    width: 300px;
+    height: 100%;
+    padding: 0px 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all .4s;
+    position: absolute;
+    top:0px;
+    left: -300px;
+}
+
+.product:hover .details{
+    left: 0px;
+}
+
+.products .details h3,
+.products .details p{
+    color: #fff;
+    text-align: center;
+}
+
+.products .details h3{
+    font-size: 30px;
+}
+
+.products .details p{
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.products .details a{
+    width: 40%;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all .4s;
+}
+
+.products .details a:hover{
+    border: 2px solid #fff;
+    transform: scale(1.15);
+}
+
+.menu .more{
+    width: 200px;
+    height: 40px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all .4s;
+}
+
+.menu .more:hover{
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    transform: scale(1.1);
+}
+
+      /* About */
+section.about{
+    width: 100%;
+    height: 100vh;
+    background-color:#e0e0e0;
+    background-image: url('../images/Fotoram.io.png');
+    background-repeat: no-repeat;
+    background-size: auto 90%;
+    background-position: 50px;
+}
+
+section.about .wrapper{
+    display: flex;
+    justify-content: flex-end;
+}
+
+section.about .details{
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Dosis', sans-serif;
+}
+
+section.about .details h2{
+    margin-top: 20px;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+section.about .details p{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.social-media{
+    width: 60%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fa {
+    display: inline;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+.fa:hover {
+    opacity: 0.7;
+  }
+  
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+.fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  /* Contact Section */
+section.contact{
+      width: 100%;
+      height: 100vh;
+      background-color: aliceblue;
+
+      background-image: url("../images/map1.png");
+      background-repeat: no-repeat;
+      background-size: auto 90%;
+      background-position: 800px;
+  }
+
+section.contact .contact-info-form{
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    color: #000;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Dosis', sans-serif;
+}
+
+section.contact input,
+section.contact textarea{
+    width: 80%;
+    box-shadow: none;
+    border: 0px;
+    border-bottom: 3px solid #000;
+    display: block;
+    padding: 20px 0px;
+    background-color: transparent;
+    color: #000;
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+}
+
+section.contact button{
+    margin-top: 20px;
+    color: #000;
+    font-size: 16px;
+    background-color: transparent;
+    border: 2px solid #000;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    text-decoration: none;
+    align-items: center;
+    transition: all .4s;
+}
+
+section.contact button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+section.contact .info{
+    margin-top: 50px;
+    font-size: 20px;
+    color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section.contact .info span{
+    display: block;
+}
